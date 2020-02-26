@@ -1,4 +1,5 @@
-本篇目录
+# 本篇目录
+
 前言
 一、安装 Vue CLI
 二、构建前端项目
@@ -9,7 +10,9 @@
 2.index.html
 3.App.vue
 4.main.js
-前言
+
+## 前言
+
 从这篇文章开始，就进入真正的实践了。
 
 在前端项目开发中，我们可以根据实际情况不同程度地使用 Vue。利用 Vue CLI（或写成 vue-cli，即 Vue 脚手架）搭建出来的项目，是最能体现 Vue 的特性的。这点在接下来的内容中我们可以慢慢感受。
@@ -25,7 +28,8 @@ https://cn.vuejs.org/v2/guide/
 
 这是第一手的学习资料，本篇的实践内容虽然用不上，但是日后要经常查阅。
 
-一、安装 Vue CLI
+## 一、安装 Vue CLI
+
 因为需要使用 npm 安装 Vue CLI，而 npm 是集成在 Node.js 中的，所以第一步我们需要安装 Node.js，访问官网 https://nodejs.org/en/，首页即可下载。
 
 图中左边是长期支持版本，右边是当前版本，下载哪个都行，我一般选择长期支持版本。
@@ -49,8 +53,10 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 接下来，就可以搭建我们的前端项目了。
 
-二、构建前端项目
-1.通用方法
+## 二、构建前端项目
+
+### 1.通用方法
+
 直接使用命令行构建项目。首先，进入到我们的工作文件夹中，我在 D 盘新建了一个叫 workspace 的文件夹，大家可以自行选择位置。
 
 然后执行命令 vue init webpack wj-vue，这里 webpack 是以 webpack 为模板指生成项目，还可以替换为 pwa、simple 等参数，这里不再赘述。 wj-vue 是我们的项目名称（White Jotter），大家也可以起别的名字。
@@ -72,8 +78,8 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 访问 http://localhost:8080，查看网页 demo，大工告成！
 
+### 2.使用 IDE (IntelliJ IDEA)
 
-2.使用 IDE (IntelliJ IDEA)
 对于习惯使用 IDE 的同学，可以使用更直观的方式构建项目。以 IntelliJ IDEA 为例，点击 Create New Project
 
 然后选择 Static Web -> Vue.js，点击 next，输入相关参数
@@ -93,8 +99,10 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 上面的内容应该足够详细了，如果大家还是遇到了问题，可以在评论区反馈一下，我会第一时间解答。
 
-三、Vue 项目结构分析
-1.概览
+## 三、Vue 项目结构分析
+
+### 1.概览
+
 使用 CLI 构建出来的 Vue 项目结构是这个样子的
 
 里面我们需要关注的内容如下图，重点需要关注的我用小红旗标了出来
@@ -103,7 +111,8 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 接下来我们分析几个文件，目的是理解各个部分是怎么联系到一起的。
 
-2.index.html
+### 2.index.html
+
 首页文件的初始代码如下：
 
 <!DOCTYPE html>
@@ -134,11 +143,13 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 还有不普通的一点是，整个项目只有这一个 html 文件，所以这是一个 单页面应用，当我们打开这个应用，表面上可以有很多页面，实际上它们都只不过在一个 div 中。
 
-3.App.vue
+### 3.App.vue
+
 上面图上我把这个文件称为“根组件”，因为其它的组件又都包含在这个组件中。
 
 .vue 文件是一种自定义文件类型，在结构上类似 html，一个 .vue 文件即是一个 vue 组件。先看它的初始代码
 
+~~~vue
 <template>
   <div id="app">
     <img src="./assets/logo.png">
@@ -162,40 +173,19 @@ export default {
   margin-top: 60px;
 }
 </style>
+~~~
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
 大家可能注意到了，这里也有一句 <div id="app">，但跟 index.html 里的那个是没有关系的。这个 id=app 只是跟下面的 css 对应。
 
 <script>标签里的内容即该组件的脚本，也就是 js 代码，export default 是 ES6 的语法，意思是将这个组件整体导出，之后就可以使用 import 导入组件了。大括号里的内容是这个组件的相关属性。
 
 这个文件最关键的一点其实是第四行， <router-view/>，是一个容器，名字叫“路由视图”，意思是当前路由（ URL）指向的内容将显示在这个容器中。也就是说，其它的组件即使拥有自己的路由（URL，需要在 router 文件夹的 index.js 文件里定义），也只不过表面上是一个单独的页面，实际上只是在根组件 App.vue 中。
 
-4.main.js
+### 4.main.js
+
 前面我们说 App.vue 里的 <div id="app"> 和 index.html 里的 <div id="app"> 没有关系，那么这两个文件是怎么建立联系的呢？让我们来看入口文件 main.js 的代码
 
+~~~js
 import Vue from 'vue'
 import App from './App'
 import router from './router'
@@ -210,20 +200,9 @@ new Vue({
   template: '<App/>'
 })
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
+~~~
+
+
 这里插一嘴，这个 js 文件有的同学可能看着不顺眼，比如没有分号（;），因为是 ES6 的语法，不这么写反而会提示错误，虽说可以把 es-lint 改了或者关了，但我想熟悉一下新的规则也挺好。
 
 最上面 import 了几个模块，其中 vue 模块在 node_modules 中，App 即 App.vue 里定义的组件，router 即 router 文件夹里定义的路由。
@@ -236,9 +215,3 @@ Vue.config.productionTip = false ,作用是阻止vue 在启动时生成生产提
 
 查看系列文章目录：
 https://learner.blog.csdn.net/article/details/88925013
-
-下一篇：
-「Vue + Spring Boot 项目实战（三）：前后端结合测试（登录页面开发）」
---------------------- 
-版权声明：本文为CSDN博主「Evan-Nightly」的原创文章，遵循CC 4.0 by-sa版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://learner.blog.csdn.net/article/details/88926242
