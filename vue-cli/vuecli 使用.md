@@ -1,4 +1,4 @@
-# @vue/cli 使用
+# vue/cli 使用
 
 官方开发文档：https://cli.vuejs.org/zh/guide/
 

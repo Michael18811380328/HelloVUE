@@ -1,0 +1,11 @@
+# Node modules
+node_modules/
+
+# site
+docs/.vuepress/dist
+
+# log
+*.log
+
+# public source
+public/
