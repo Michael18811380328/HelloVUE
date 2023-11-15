@@ -1,14 +1,13 @@
 <template>
-<div id="rich-text">
-  <slot></slot>
-</div>
+  <div id="rich-text">
+    <slot></slot>
+  </div>
 </template>
 
 <script>
-export default {
-}
+export default {};
 </script>
 
 <style>
-@import url('../assets/news_qa.auto.css');
+@import url("../assets/news_qa.auto.css");
 </style>

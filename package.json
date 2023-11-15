@@ -4,15 +4,24 @@
   "description": "learn to use VUE to develop a project",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "vuepress dev docs --cache .cache",
-    "docs:build": "vuepress build docs"
+    "lint": "prettier --check --write .",
+    "dev": "vuepress dev docs --cache .cache",
+    "build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Michael18811380328/HelloVUE.git"
   },
+  "keywords": [
+    "vue"
+  ],
   "author": "Michael An",
+  "bugs": {
+    "url": "https://github.com/Michael18811380328/HelloVUE/issues"
+  },
+  "homepage": "https://github.com/Michael18811380328/HelloVUE#readme",
   "devDependencies": {
+    "prettier": "^2.8.8",
     "vuepress": "^1.9.10"
   }
 }

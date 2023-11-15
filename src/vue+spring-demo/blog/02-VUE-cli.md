@@ -2,11 +2,8 @@
 
 前言
 一、安装 Vue CLI
-二、构建前端项目
-1.通用方法
-2.使用 IDE (IntelliJ IDEA)
-三、Vue 项目结构分析
-1.概览
+二、构建前端项目 1.通用方法 2.使用 IDE (IntelliJ IDEA)
+三、Vue 项目结构分析 1.概览
 2.index.html
 3.App.vue
 4.main.js
@@ -40,7 +37,6 @@ https://cn.vuejs.org/v2/guide/
 
 输入 npm -g install npm ，将 npm 更新至最新版本。
 
-
 之后可以选择安装 cnpm，即 npm 的国内镜像。使用 cnmp 的好处是在日后下载内容时会比较快，但是下载的包可能不是最新的。
 
 安装 cnpm 的命令为 ：
@@ -63,7 +59,6 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 在程序执行的过程中会有一些提示，可以按照默认的设定一路回车下去，也可以按需修改，比如下图问我项目名称是不是 wj-vue，直接回车确认就行。
 
-
 这里还会问是否安装 vue-router，一定要选是，也就是回车或按 Y，vue-router 是我们构建单页面应用的关键。
 
 还有是否使用 es-lint，这玩意儿挺烦的，但为了代码质量先将就一下吧。
@@ -72,7 +67,7 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 可以看到 workspace 目录下生成了项目文件夹 wj-vue，里面的结构如图
 
-接下来，进入到我们的项目文件夹里(cd D:\workspace\wj-vue)，执行npm run dev
+接下来，进入到我们的项目文件夹里(cd D:\workspace\wj-vue)，执行 npm run dev
 
 项目构建成功，这一步如果报错，可能是未能加载项目所需的依赖包，即 node_modules 里的内容，需要在该文件夹执行 npm -install ，再执行 npm run dev
 
@@ -83,7 +78,6 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 对于习惯使用 IDE 的同学，可以使用更直观的方式构建项目。以 IntelliJ IDEA 为例，点击 Create New Project
 
 然后选择 Static Web -> Vue.js，点击 next，输入相关参数
-
 
 这里注意 Project location 需要输入到项目文件夹一级而不是 workspace。输入完成后点击 Next，等待 Vue CLI 初始化，然后在可视化界面上确认项目信息，修改或 Next 即可。IDEA 构建出的 Vue 项目是不含 node_modules 的，所以要先调出终端，执行 npm install
 
@@ -149,23 +143,23 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 .vue 文件是一种自定义文件类型，在结构上类似 html，一个 .vue 文件即是一个 vue 组件。先看它的初始代码
 
-~~~vue
+```vue
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <img src="./assets/logo.png" />
+    <router-view />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
-}
+  name: "App",
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -173,7 +167,7 @@ export default {
   margin-top: 60px;
 }
 </style>
-~~~
+```
 
 大家可能注意到了，这里也有一句 <div id="app">，但跟 index.html 里的那个是没有关系的。这个 id=app 只是跟下面的 css 对应。
 

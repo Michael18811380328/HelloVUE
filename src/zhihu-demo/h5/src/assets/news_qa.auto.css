@@ -26,7 +26,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
   background: #fff;
   padding-top: 0;
   margin: 0;
@@ -39,7 +39,7 @@ a:hover {
   outline: 0;
 }
 h1 {
-  margin: .67em 0;
+  margin: 0.67em 0;
 }
 h1,
 h2,
@@ -64,7 +64,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace,serif;
+  font-family: monospace, serif;
   font-size: 1em;
 }
 pre {
@@ -104,7 +104,7 @@ figure {
 fieldset {
   border: 1px solid silver;
   margin: 0 2px;
-  padding: .35em .625em .75em;
+  padding: 0.35em 0.625em 0.75em;
 }
 legend {
   border: 0;
@@ -119,12 +119,12 @@ a {
   text-decoration: none;
 }
 blockquote {
-  border-left: 3px solid #D0E5F2;
+  border-left: 3px solid #d0e5f2;
   font-style: normal;
   display: block;
   vertical-align: baseline;
   font-size: 100%;
-  margin: .5em 0;
+  margin: 0.5em 0;
   padding: 0 0 0 1em;
 }
 ul,
@@ -175,13 +175,13 @@ ol {
 }
 .headline-background .heading {
   color: #999;
-  font-size: 15px!important;
+  font-size: 15px !important;
   margin-bottom: 8px;
   line-height: 1em;
 }
 .headline-background .heading-content {
   color: #444;
-  font-size: 17px!important;
+  font-size: 17px !important;
   line-height: 1.2em;
 }
 .headline-title {
@@ -189,7 +189,7 @@ ol {
   color: #000;
   font-size: 22px;
   margin: 20px 0 10px;
-  padding: 0 20px!important;
+  padding: 0 20px !important;
   font-weight: bold;
 }
 .meta {
@@ -245,11 +245,11 @@ ol {
   height: 30px;
   line-height: 30px;
   background: #f0f0f0;
-  color: #B8B8B8;
+  color: #b8b8b8;
 }
 .question {
   overflow: hidden;
-  padding: 0 20px!important;
+  padding: 0 20px !important;
 }
 .question + .question {
   border-top: 5px solid #f6f6f6;
@@ -347,7 +347,7 @@ ol {
   bottom: 5px;
 }
 .img-wrap .img-source {
-  right: 10px!important;
+  right: 10px !important;
   font-size: 9px;
 }
 .global-header {
@@ -379,7 +379,13 @@ ol {
   border-bottom: 4px solid #303030;
 }
 .night img {
-  -webkit-mask-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7)));
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    0 0,
+    0 100%,
+    from(rgba(0, 0, 0, 0.7)),
+    to(rgba(0, 0, 0, 0.7))
+  );
 }
 body.night,
 .night .content-wrap {
@@ -473,10 +479,10 @@ body.night,
 }
 .highlight::-webkit-scrollbar-thumb:horizontal {
   border-radius: 6px;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .highlight::-webkit-scrollbar-thumb:horizontal:hover {
-  background-color: rgba(0,0,0,.6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .highlight pre {
   margin: 0;
@@ -567,7 +573,7 @@ dfn,
 .night .headline-title,
 .night .headline-background .heading-content,
 .night .question-title {
-  color: #B8B8B8;
+  color: #b8b8b8;
 }
 .highlight .c,
 .highlight .cm,
@@ -630,7 +636,8 @@ dfn,
 .answer h5 {
   font-size: 19px;
 }
-@media only screen and (-webkit-min-device-pixel-ratio2), only screen and (min-device-pixel-ratio2) {
+@media only screen and (-webkit-min-device-pixel-ratio2),
+  only screen and (min-device-pixel-ratio2) {
   .icon-arrow-right {
     background-image: url(http://static.daily.zhihu.com/img/share-icons@2x.png);
     -webkit-background-size: 82px 55px;
@@ -810,7 +817,7 @@ a.origin-source:link .text {
 
 blockquote {
   color: #9da3a6;
-  border-left: 3px solid #Dfe3e6;
+  border-left: 3px solid #dfe3e6;
 }
 
 .content a {
@@ -830,7 +837,6 @@ hr {
   margin: 30px 0;
   border-top-width: 0;
 }
-
 
 p {
   margin: 20px 0 !important;
@@ -858,7 +864,13 @@ p {
   border-bottom: none;
 }
 .dudu-night img {
-  -webkit-mask-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7)));
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    0 0,
+    0 100%,
+    from(rgba(0, 0, 0, 0.7)),
+    to(rgba(0, 0, 0, 0.7))
+  );
 }
 body.dudu-night,
 .dudu-night .content-wrap {

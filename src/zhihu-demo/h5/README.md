@@ -1,5 +1,6 @@
 # 简化版知乎日报
-``` bash
+
+```bash
 # install dependencies
 npm install
 

@@ -1,4 +1,6 @@
-#long-comments-bar, #short-comments-bar, .comments {
+#long-comments-bar,
+#short-comments-bar,
+.comments {
   padding: 30rpx;
   border-bottom: 1px solid #eee;
   display: block;
@@ -24,7 +26,8 @@
   color: #888;
 }
 
-.comments .content, .comments .time {
+.comments .content,
+.comments .time {
   display: block;
 }
 

@@ -7,14 +7,8 @@ Element - The world’s most popular Vue UI framework，你值得拥有。此时
 （小声比比）白卷，是我们全村最好的图书管理系统。
 
 本篇目录
-一、安装并引入 Element
-1.安装 Element
-2.引入 Element
-二、优化登录页面
-1.使用 Form 组件
-2.添加样式
-3.设置背景
-4.完整代码
+一、安装并引入 Element 1.安装 Element 2.引入 Element
+二、优化登录页面 1.使用 Form 组件 2.添加样式 3.设置背景 4.完整代码
 一、安装并引入 Element
 Element 的官方地址为 http://element-cn.eleme.io/#/zh-CN
 
@@ -22,7 +16,6 @@ Element 的官方地址为 http://element-cn.eleme.io/#/zh-CN
 
 1.安装 Element
 根据官方文档的描述，在项目文件夹下，执行 npm i element-ui -S 即可
-
 
 2.引入 Element
 引入分为完整引入和按需引入两种模式，按需引入可以缩小项目的体积，这里我们选择完整引入。
@@ -42,13 +35,13 @@ Vue.config.productionTip = false
 
 Vue.use(ElementUI)
 
-/* eslint-disable no-new */
+/_ eslint-disable no-new _/
 new Vue({
-  el: '#app',
-  render: h => h(App),
-  router,
-  components: { App },
-  template: '<App/>'
+el: '#app',
+render: h => h(App),
+router,
+components: { App },
+template: '<App/>'
 })
 
 1
@@ -95,7 +88,6 @@ new Vue({
 
 二、优化登录页面
 首先，让我们去掉这个清奇的 V ，打开 App.vue，把 <img src="./assets/logo.png"> 删掉即可。不过我一般喜欢先注释掉，确定没有影响了再删除。
-
 
 1.使用 Form 组件
 让我们来修改 Login.vue 的代码。原来是这样的
@@ -228,7 +220,6 @@ new Vue({
 
 在开发前端的内容时，我们修改了代码，就可以对应地看到效果，而不用重启项目。我一般会把浏览器也开着，以便实时监测。修改完上面的内容，页面变成了这样
 
-
 2.添加样式
 为了进一步优化界面，我们为组件再添加一些样式，即在 Login.vue 的最后添加如下代码
 
@@ -251,6 +242,7 @@ new Vue({
   }
 
 </style>
+
 1
 2
 3
@@ -272,7 +264,6 @@ new Vue({
 19
 刷新页面（Ctrl + F5），看起来顺眼多了
 
-
 3.设置背景
 最后，我们为这个单调的登录页面设置一个背景。我在网上找了这张图
 
@@ -280,17 +271,17 @@ new Vue({
 
 为了使用背景图片，我在 <el-form> 标签的外又添加了一个父标签 <body>，id 设置为 poster，并在 <style> 中添加如下内容
 
-  #poster {
-    background:url("../assets/eva.jpg") no-repeat;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    position: fixed;
-  }
-  body{
-    margin: 0px;
-  }
+#poster {
+background:url("../assets/eva.jpg") no-repeat;
+background-position: center;
+height: 100%;
+width: 100%;
+background-size: cover;
+position: fixed;
+}
+body{
+margin: 0px;
+}
 1
 2
 3
@@ -489,6 +480,8 @@ OK，又一次大功告成了。
 
 查看系列文章目录：
 https://blog.csdn.net/Neuf_Soleil/article/details/88925013
---------------------- 
-版权声明：本文为CSDN博主「Evan-Nightly」的原创文章，遵循CC 4.0 by-sa版权协议，转载请附上原文出处链接及本声明。
+
+---
+
+版权声明：本文为 CSDN 博主「Evan-Nightly」的原创文章，遵循 CC 4.0 by-sa 版权协议，转载请附上原文出处链接及本声明。
 原文链接：https://learner.blog.csdn.net/article/details/89298717

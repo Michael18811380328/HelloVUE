@@ -1,4 +1,4 @@
-# @vue/cli 使用
+# vue/cli 使用
 
 官方开发文档：https://cli.vuejs.org/zh/guide/
 
@@ -20,8 +20,8 @@ vue ui
 
 启动项目
 
-~~~bash
+```bash
 npm install
 npm run serve
 npm run build
-~~~
+```
