@@ -109,11 +109,12 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 首页文件的初始代码如下：
 
+```html
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>wj-vue</title>
   </head>
   <body>
@@ -121,19 +122,9 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
     <!-- built files will be auto injected -->
   </body>
 </html>
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-就是一个普普通通的 html 文件，让它不平凡的是 <div id="app"></div> ，下面有一行注释，构建的文件将会被自动注入，也就是说我们编写的其它的内容都将在这个 div 中展示。
+```
+
+就是一个普普通通的 html 文件，让它不平凡的是 `<div id="app"></div>` ，下面有一行注释，构建的文件将会被自动注入，也就是说我们编写的其它的内容都将在这个 div 中展示。
 
 还有不普通的一点是，整个项目只有这一个 html 文件，所以这是一个 单页面应用，当我们打开这个应用，表面上可以有很多页面，实际上它们都只不过在一个 div 中。
 
@@ -169,15 +160,15 @@ export default {
 </style>
 ```
 
-大家可能注意到了，这里也有一句 <div id="app">，但跟 index.html 里的那个是没有关系的。这个 id=app 只是跟下面的 css 对应。
+大家可能注意到了，这里也有一句 `<div id="app">`，但跟 index.html 里的那个是没有关系的。这个 id=app 只是跟下面的 css 对应。
 
-<script>标签里的内容即该组件的脚本，也就是 js 代码，export default 是 ES6 的语法，意思是将这个组件整体导出，之后就可以使用 import 导入组件了。大括号里的内容是这个组件的相关属性。
+`<script>`标签里的内容即该组件的脚本，也就是 js 代码，export default 是 ES6 的语法，意思是将这个组件整体导出，之后就可以使用 import 导入组件了。大括号里的内容是这个组件的相关属性。
 
-这个文件最关键的一点其实是第四行， <router-view/>，是一个容器，名字叫“路由视图”，意思是当前路由（ URL）指向的内容将显示在这个容器中。也就是说，其它的组件即使拥有自己的路由（URL，需要在 router 文件夹的 index.js 文件里定义），也只不过表面上是一个单独的页面，实际上只是在根组件 App.vue 中。
+这个文件最关键的一点其实是第四行， `<router-view/>`，是一个容器，名字叫“路由视图”，意思是当前路由（ URL）指向的内容将显示在这个容器中。也就是说，其它的组件即使拥有自己的路由（URL，需要在 router 文件夹的 index.js 文件里定义），也只不过表面上是一个单独的页面，实际上只是在根组件 App.vue 中。
 
 ### 4.main.js
 
-前面我们说 App.vue 里的 <div id="app"> 和 index.html 里的 <div id="app"> 没有关系，那么这两个文件是怎么建立联系的呢？让我们来看入口文件 main.js 的代码
+前面我们说 App.vue 里的 `<div id="app">` 和 index.html 里的 `<div id="app">` 没有关系，那么这两个文件是怎么建立联系的呢？让我们来看入口文件 main.js 的代码
 
 ~~~js
 import Vue from 'vue'
@@ -208,4 +199,5 @@ Vue.config.productionTip = false ,作用是阻止vue 在启动时生成生产提
 看完了以上三个文件，我想基本上就对前端项目的结构有所了解了。下一篇中我将用一个例子解释前后端分离的项目是如何联系起来的。
 
 查看系列文章目录：
+
 https://learner.blog.csdn.net/article/details/88925013
