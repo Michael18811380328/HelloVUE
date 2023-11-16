@@ -1,6 +1,7 @@
 // https://www.vuepress.cn/config/
 
 module.exports = {
+  base: "/vue/",
   title: "Vue 笔记",
   description: "Just playing around",
   // https://www.vuepress.cn/guide/markdown.html#%E8%A1%8C%E5%8F%B7

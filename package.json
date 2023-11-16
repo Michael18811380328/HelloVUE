@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "prettier --check --write .",
     "dev": "vuepress dev docs --cache .cache",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "move": "npm run build && rm -rf ../Michael18811380328.github.io/vue && cp -r ./docs/.vuepress/dist ../Michael18811380328.github.io/vue"
   },
   "repository": {
     "type": "git",
