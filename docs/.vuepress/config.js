@@ -15,14 +15,15 @@ module.exports = {
     // 顶部导航栏
     // https://www.vuepress.cn/zh/theme/default-theme-config.html#%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%93%BE%E6%8E%A5
     nav: [
-      { text: "博客主页", link: "https://michael18811380328.github.io/" },
-      { text: "Vue笔记", link: "/" },
+      { text: "概述", link: "/" },
       {
         text: "第三方库",
         items: [
-          { text: "常用资源", link: "/third-party/vue-all.md" },
           { text: "vuecli", link: "/third-party/vuecli.md" },
           { text: "vue-press", link: "/third-party/vuepress-basic.md" },
+          // Element Plus.md
+          // element-ui
+          // Vite.md
         ],
       },
       {
@@ -40,6 +41,7 @@ module.exports = {
           { text: "09-前端检索", link: "/vue-spring-demo-blog/09-前端检索.md" },
         ],
       },
+      { text: "更多", link: "https://michael18811380328.github.io/" },
     ],
     // 左侧旁栏 sidebar 只显示文档内部的大纲，不需要额外配置
     // https://www.vuepress.cn/zh/theme/default-theme-config.html#%E4%BE%A7%E8%BE%B9%E6%A0%8F

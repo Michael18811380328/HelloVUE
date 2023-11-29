@@ -1,6 +1,6 @@
 # vue/cli 使用
 
-官方开发文档：https://cli.vuejs.org/zh/guide/
+官方开发文档：<https://cli.vuejs.org/zh/guide/>
 
 全局安装
 
@@ -12,8 +12,9 @@ sudo npm install @vue/cli-service-global
 创建项目
 
 ```bash
-# 初始化项目需要设置配置依赖：ts babel eslint
+# 初始化项目需要设置配置依赖：typescript、babel、eslint 等
 vue create my-project
+
 # 图形化界面开发
 vue ui
 ```

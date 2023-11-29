@@ -1,25 +1,21 @@
+# Element 前端组件
+
 之前我们实现了登录功能，但不得不说登录页面实在是太简陋了。在这个看脸的社会，如果代码写的烂，界面也做得不好看，就真的没得救了。但是如果不是专职做 UI 设计，又没有必要浪费这么多时间在上面，所以我们需要借助一些工具来制作我们的页面。
 
 Element - The world’s most popular Vue UI framework，你值得拥有。
 
-此时我特别想高喊一句 “PHP 是世界上最好的语言”，现在搜啥啥都说自己是最好的，输什么不能输气势啊。先看一下修改完的登录页面
-
 当然，Element 不仅仅是界面这么简单，它对 Vue 又做了进一步的封装，可以简便地使用许多实用的功能。
 
-（小声比比）白卷，是我们全村最好的图书管理系统。
+## 一、安装并引入 Element
 
-本篇目录
-一、安装并引入 Element 1.安装 Element 2.引入 Element
-二、优化登录页面 1.使用 Form 组件 2.添加样式 3.设置背景 4.完整代码
-一、安装并引入 Element
 Element 的官方地址为 http://element-cn.eleme.io/#/zh-CN
 
-这一部分的内容在官方文档上都有体现，我只是照搬下来。在以后我们会经常使用 Element 提供的组件，大家要自己尝试查阅文档，这个是中文的，还是很好理解的。
-
 1.安装 Element
-根据官方文档的描述，在项目文件夹下，执行 npm i element-ui -S 即可
+
+根据官方文档的描述，在项目文件夹下，执行 `npm i element-ui -S` 即可
 
 2.引入 Element
+
 引入分为完整引入和按需引入两种模式，按需引入可以缩小项目的体积，这里我们选择完整引入。
 
 根据文档，我们需要修改 main.js 为如下内容
@@ -29,22 +25,25 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import ElementUI from 'element-ui'
+var axios = require('axios')
+
 import 'element-ui/lib/theme-chalk/index.css'
 
-var axios = require('axios')
 axios.defaults.baseURL = 'http://localhost:8443/api'
+
 Vue.prototype.$axios = axios
 Vue.config.productionTip = false
 
+// 全局使用组件
 Vue.use(ElementUI)
 
-/_ eslint-disable no-new _/
+/*_ eslint-disable no-new _*/
 new Vue({
-el: '#app',
-render: h => h(App),
-router,
-components: { App },
-template: '<App/>'
+  el: '#app',
+  render: h => h(App),
+  router,
+  components: { App },
+  template: '<App/>'
 })
 ```
 
@@ -52,22 +51,22 @@ template: '<App/>'
 
 ```vue
 <el-card>
-      用户名:<input type="text" v-model="loginForm.username" placeholder="请输入用户名"/>
-      <br><br>
-      密码： <input type="password" v-model="loginForm.password" placeholder="请输入密码"/>
-      <br><br>
-      <button v-on:click="login">登录</button>
-  </el-card>
+  用户名:<input type="text" v-model="loginForm.username" placeholder="请输入用户名"/>
+  <br><br>
+  密码： <input type="password" v-model="loginForm.password" placeholder="请输入密码"/>
+  <br><br>
+  <button v-on:click="login">登录</button>
+</el-card>
 ```
 
 然后访问 http://localhost:8080/#/login ，查看效果
 
-嗯，还是很丑，但是成功了。
+## 二、优化登录页面
 
-二、优化登录页面
 首先，让我们去掉这个清奇的 V ，打开 App.vue，把 `<img src="./assets/logo.png">` 删掉即可。不过我一般喜欢先注释掉，确定没有影响了再删除。
 
-1.使用 Form 组件
+### 1.使用 Form 组件
+
 让我们来修改 Login.vue 的代码。原来是这样的
 
 ```vue
@@ -163,9 +162,10 @@ export default {
 
 `<el-form-item>` 里面再放置其它的内容，比如 `<el-input>`，关于 `<el-input>` 的属性，可以查阅 Input 的文档，`<el-button>` 亦然。
 
-在开发前端的内容时，我们修改了代码，就可以对应地看到效果，而不用重启项目。我一般会把浏览器也开着，以便实时监测。修改完上面的内容，页面变成了这样
+在开发前端的内容时，我们修改了代码，就可以对应地看到效果，而不用重启项目。我一般会把浏览器也开着，以便实时监测。
 
-2.添加样式
+### 2.添加样式
+
 为了进一步优化界面，我们为组件再添加一些样式，即在 Login.vue 的最后添加如下代码
 
 ```vue
@@ -189,10 +189,9 @@ export default {
 </style>
 ```
 
-刷新页面（Ctrl + F5），看起来顺眼多了
+### 3.设置背景
 
-3.设置背景
-最后，我们为这个单调的登录页面设置一个背景。我在网上找了这张图
+最后，我们为这个单调的登录页面设置一个背景。
 
 可以把它保存下来，放在 src\assets 文件夹下，命名为 eva.jpg 在 build 项目时，这个文件夹里的图片会被自动转成 base64。也可以在这个文件夹里再新建文件夹，方便管理。
 
@@ -207,6 +206,7 @@ export default {
   background-size: cover;
   position: fixed;
 }
+
 body {
   margin: 0px;
 }
@@ -220,7 +220,8 @@ OK，又一次大功告成了。
 
 另外可以在 Login.vue 的 data 方法中设置输入框的默认值，省的每次进来都要再输一遍。
 
-4.完整代码
+### 4.完整代码
+
 最后附上 Login.vue 的完整代码，可以直接复制
 
 ```vue
@@ -321,15 +322,9 @@ body {
 下一篇文章主要讲解以下内容：
 
 一、前端路由的 hash 模式与 history 模式
+
 二、history 模式下后端错误页面的配置
+
 三、登录拦截的实现
 
 为什么要在登录页面上废这么多篇幅呢？因为把这个页面做完，就差不多理解了项目的构成，之后的开发就可以把精力集中在业务功能的实现上了。之后的基本模式，就是前端开发组件、后端开发控制器，调试功能，做起来会很快。
-
-查看系列文章目录：
-https://blog.csdn.net/Neuf_Soleil/article/details/88925013
-
----
-
-版权声明：本文为 CSDN 博主「Evan-Nightly」的原创文章，遵循 CC 4.0 by-sa 版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://learner.blog.csdn.net/article/details/89298717
