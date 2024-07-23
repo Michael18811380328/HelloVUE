@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/Michael18811380328/HelloVUE#readme",
   "devDependencies": {
+    "@vuepress/shared-utils": "^1.9.10",
     "prettier": "^2.8.8",
     "vuepress": "^1.9.10"
   }

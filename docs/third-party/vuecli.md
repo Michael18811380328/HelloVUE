@@ -1,6 +1,6 @@
 # vue/cli 使用
 
-官方开发文档：<https://cli.vuejs.org/zh/guide/>
+官方开发文档：https://cli.vuejs.org/zh/guide/
 
 全局安装
 
@@ -26,3 +26,9 @@ npm install
 npm run serve
 npm run build
 ```
+
+## TODO
+
+配置文件说明，例如如何多入口文件等
+
+https://cli.vuejs.org/zh/config/#pages

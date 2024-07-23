@@ -9,3 +9,6 @@ docs/.vuepress/dist
 
 # public source
 public/
+
+# cache
+.cache

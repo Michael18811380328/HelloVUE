@@ -21,9 +21,12 @@ module.exports = {
         items: [
           { text: "vuecli", link: "/third-party/vuecli.md" },
           { text: "vue-press", link: "/third-party/vuepress-basic.md" },
-          // Element Plus.md
-          // element-ui
-          // Vite.md
+          { text: "Element-Plus", link: "/third-party/Element-Plus.md" },
+          { text: "element-ui", link: "/third-party/element-ui.md" },
+          { text: "Vite", link: "/third-party/Vite.md" },
+          { text: "vuex", link: "/third-party/vuex.md" },
+          { text: "vuetify", link: "/third-party/vuetify.md" },
+          { text: "awesome-vue", link: "/third-party/awesome-vue.md" },
         ],
       },
       {
