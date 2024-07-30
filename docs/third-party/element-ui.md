@@ -1,14 +1,16 @@
 # element-ui
 
+# element-ui
+
 Element，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库
 
-https://element.eleme.cn/#/zh-CN/component/installation
+<https://element.eleme.cn/#/zh-CN/component/installation>
 
 支持按需引入和完整引入
 
 按需引入
 
-~~~js
+```javascript
 import Vue from 'vue';
 import { Button, Select } from 'element-ui';
 import App from './App.vue';
@@ -25,11 +27,11 @@ new Vue({
   el: '#app',
   render: h => h(App)
 });
-~~~
+```
 
 完整引入，包括下面常用组件
 
-~~~js
+```javascript
 import Vue from 'vue';
 import {
   Pagination,
@@ -194,116 +196,108 @@ Vue.prototype.$confirm = MessageBox.confirm;
 Vue.prototype.$prompt = MessageBox.prompt;
 Vue.prototype.$notify = Notification;
 Vue.prototype.$message = Message;
-~~~
+```
 
-# element-ui 
-
+# element-ui&#x20;
 
 ### version
 
-2.15.14 • 
-
+2.15.14 •&#x20;
 
 ### downloads
 
-192,906 
-
+192,906&#x20;
 
 ### repository
 
-github.com/ElemeFE/element 
-
+github.com/ElemeFE/element&#x20;
 
 ### homepage
 
-element.eleme.io 
-
+element.eleme.io&#x20;
 
 ## default readme
-
 
 > A Vue.js 2.0 UI Toolkit for Web.
 
 Element will stay with Vue 2.x
 
-For Vue 3.0, we recommend using [Element Plus](https://github.com/element-
-plus/element-plus)(Element Plus is a community develop project)
+For Vue 3.0, we recommend using Element Plus(Element Plus is a community develop project)
 
 For MiniProgram development, we recommend using
-[MorJS](https://github.com/eleme/morjs)
+MorJS
 
 ## Links
 
-  * Homepage and documentation 
-    * [International users](http://element.eleme.io/#/en-US)
-    * [Chinese users](http://element.eleme.io/#/zh-CN)
-    * [Spanish users](http://element.eleme.io/#/es)
-    * [French users](http://element.eleme.io/#/fr-FR)
-  * [awesome-element](https://github.com/ElementUI/awesome-element)
-  * [FAQ](https://github.com/ElemeFE/element/blob/HEAD/FAQ.md)
-  * [Vue.js 3.0 migration](https://github.com/element-plus/element-plus)
-  * [Customize theme](http://element.eleme.io/#/en-US/component/custom-theme)
-  * [Preview and generate theme online](https://elementui.github.io/theme-chalk-preview)
-  * [Element for React](https://github.com/elemefe/element-react)
-  * [Element for Angular](https://github.com/ElemeFE/element-angular)
-  * [Atom helper](https://github.com/ElemeFE/element-helper)
-  * [Visual Studio Code helper](https://github.com/ElemeFE/vscode-element-helper)
-  * Starter kit 
-    * [element-starter](https://github.com/ElementUI/element-starter)
-    * [element-in-laravel-starter](https://github.com/ElementUI/element-in-laravel-starter)
-  * [Design resources](https://github.com/ElementUI/Resources)
-  * Gitter 
-    * [International users](https://gitter.im/element-en/Lobby)
-    * [Chinese users](https://gitter.im/ElemeFE/element)
+* Homepage and documentation&#x20;
+
+  * International users
+
+  * Chinese users
+
+  * Spanish users
+
+  * French users
+
+* awesome-element
+
+* FAQ
+
+* Vue.js 3.0 migration
+
+* Customize theme
+
+* Preview and generate theme online
+
+* Element for React
+
+* Element for Angular
+
+* Atom helper
+
+* Visual Studio Code helper
+
+* Starter kit&#x20;
+
+  * element-starter
+
+  * element-in-laravel-starter
+
+* Design resources
+
+* Gitter&#x20;
+
+  * International users
+
+  * Chinese users
 
 ## Install
 
+​ npm install element-ui -S
 
-​    
-​    npm install element-ui -S
+## Quick Start​   &#x20;
 
-## Quick Start
-
-
-​    
+```javascript
 ​    import Vue from 'vue'
 ​    import Element from 'element-ui'
 ​    
 ​    Vue.use(Element)
-​    
 
-    // or
-    import {
-      Select,
-      Button
-      // ...
-    } from 'element-ui'
-    
-    Vue.component(Select.name, Select)
-    Vue.component(Button.name, Button)
+// or
+import {
+  Select,
+  Button
+  // ...
+} from 'element-ui'
 
-For more information, please refer to [Quick
-Start](http://element.eleme.io/#/en-US/component/quickstart) in our
-documentation.
+Vue.component(Select.name, Select)
+Vue.component(Button.name, Button)
+```
 
-## Browser Support
+For more information, please refer to QuickStart in our documentation.
 
-Modern browsers and Internet Explorer 10+.
+[https://element.eleme.io/#/en-US/component/quickstart](https://element.eleme.io/#/en-US/component/quickstart "https://element.eleme.io/#/en-US/component/quickstart")
 
-## Development
+​
 
-Skip this part if you just want to use Element.
-
-For those who are interested in contributing to Element, please refer to our contributing guide ([中文](https://github.com/ElemeFE/element/blob/master/.github/CONTRIBUTING.zh-CN.md) | [English](https://github.com/ElemeFE/element/blob/master/.github/CONTRIBUTING.en-US.md) | [Español](https://github.com/ElemeFE/element/blob/master/.github/CONTRIBUTING.es.md) | [Français](https://github.com/ElemeFE/element/blob/master/.github/CONTRIBUTING.fr-FR.md)) to see how to run this project.
-
-## Changelog
-
-Detailed changes for each release are documented in the [release
-notes](https://github.com/ElemeFE/element/releases).
-
-## FAQ
-
-We have collected some [frequently asked
-questions](https://github.com/ElemeFE/element/blob/master/FAQ.md). Before
-reporting an issue, please search if the FAQ has the answer to your problem.
 
