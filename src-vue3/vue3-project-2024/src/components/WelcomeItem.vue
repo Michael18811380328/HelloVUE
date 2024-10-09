@@ -1,10 +1,13 @@
 <template>
+  <!-- 欢迎组件 -->
   <div class="item">
     <i>
+      <!-- 插槽，父组件使用 <template #icon> 把对应组件插入到这个节点，表示图标 -->
       <slot name="icon"></slot>
     </i>
     <div class="details">
       <h3>
+        <!-- 插槽，父组件使用 <template #icon> 把对应组件插入到这个节点，表示标题 -->
         <slot name="heading"></slot>
       </h3>
       <slot></slot>

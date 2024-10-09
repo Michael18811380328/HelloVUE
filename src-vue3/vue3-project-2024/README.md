@@ -6,3 +6,6 @@
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
+## 官方参考
+
+https://cn.vuejs.org/guide/introduction.html

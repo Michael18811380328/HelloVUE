@@ -1,4 +1,5 @@
 <script setup>
+// 使用 defineProps 函数来定义一个名为 msg 的 prop，并指定其类型和是否为必需的。
 defineProps({
   msg: {
     type: String,
@@ -11,14 +12,13 @@ defineProps({
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>
-      You’ve successfully created a project with
-      <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
+      You’ve successfully created a project with Vite + Vue 3
     </h3>
   </div>
 </template>
 
 <style scoped>
+/* scoped 范围，表示样式只在该组件中生效，不会污染全局样式 */
 h1 {
   font-weight: 500;
   font-size: 2.6rem;

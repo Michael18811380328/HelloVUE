@@ -4,19 +4,18 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
+  <!-- 头部组件，包括欢迎和导航链接 -->
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
+      <HelloWorld msg="VUE3" />
       <nav>
         <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/about-me">About Me</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
   </header>
-
+  <!-- 路由到不同的组件部分 -->
   <RouterView />
 </template>
 
