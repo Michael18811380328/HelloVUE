@@ -1,6 +1,6 @@
 # quasar
 
-#### quasar&#x20;
+#### quasar
 
 [https://github.com/quasarframework/quasar](https://github.com/quasarframework/quasar "https://github.com/quasarframework/quasar")
 
@@ -10,19 +10,19 @@
 
 #### version
 
-2.16.6 •&#x20;
+2.16.6 •
 
 #### downloads
 
-127,108&#x20;
+127,108
 
 #### repository
 
-github.com/quasarframework/quasar&#x20;
+github.com/quasarframework/quasar
 
 #### homepage
 
-quasar.dev&#x20;
+quasar.dev
 
 #### default readme
 

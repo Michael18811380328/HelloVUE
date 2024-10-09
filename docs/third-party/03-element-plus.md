@@ -1,10 +1,10 @@
-# element-plus
-
 # Element Plus
 
 基于 Vue 3，面向设计师和开发者的组件库
 
-Element UI 是国内使用最广泛的 Vue2 组件库之一，而 Element Plus 是 Element UI 的升级版，基于 Vue3 和 TypeScript，提供了 70 多个易于使用的组件。
+Element UI 是国内使用最广泛的 Vue2 组件库之一
+
+而 Element Plus 是 Element UI 的升级版，基于 Vue3 和 TypeScript，提供了 70 多个易于使用的组件。
 
 [https://element-plus.org/zh-CN/](https://element-plus.org/zh-CN/ "https://element-plus.org/zh-CN/")
 
@@ -14,19 +14,19 @@ Element UI 是国内使用最广泛的 Vue2 组件库之一，而 Element Plus �
 
 ### version
 
-2.7.7 •&#x20;
+2.7.7 •
 
 ### downloads
 
-203,422&#x20;
+203,422
 
 ### repository
 
-github.com/element-plus/element-plus&#x20;
+github.com/element-plus/element-plus
 
 ### homepage
 
-element-plus.org/&#x20;
+element-plus.org/
 
 ## default readme
 
@@ -79,9 +79,11 @@ Element Plus 于 2020年9月发布第一个 Beta 版本，2022年2月发布第�
 | 贡献者     | 540                     |
 | 组件数     | 70                      |
 
-​
 
-https\://element-plus.org/zh-CN/component/
+
+https://element-plus.org/zh-CN/component/
+
+
 
 完整引入
 
@@ -98,7 +100,7 @@ app.use(ElementPlus)
 app.mount('#app')
 ```
 
-按钮组件使用
+例如按钮组件使用
 
 ```html
 <template>
@@ -150,7 +152,5 @@ import {
 } from '@element-plus/icons-vue'
 </script>
 ```
-
-​
 
 

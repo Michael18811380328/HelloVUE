@@ -1,7 +1,5 @@
 # ant-design-vue
 
-# ant-design-vue&#x20;
-
 阿里巴巴出品，ant-design 的 vue 版本
 
 ### version
@@ -10,17 +8,15 @@
 
 ### downloads
 
-104,487&#x20;
+104,487
 
 ### repository
 
-github.com/vueComponent/ant-design-vue&#x20;
+github.com/vueComponent/ant-design-vue
 
 ### homepage
 
-[www.antdv.com/](http://www.antdv.com/)&#x20;
-
-## Ant Design Vue
+[www.antdv.com/](http://www.antdv.com/)
 
 Ant Design 是全球历史最悠久和最受欢迎的组件库之一，官方提供 React 版本，Ant Design Vue 是它的 Vue 版本，由社区开发和维护，遵循 Ant Design 设计规范，提供 67 个组件。
 
@@ -41,9 +37,13 @@ Ant Design Vue 于 2017年9月创建代码仓库，2018年8月发布第一个版
 | 贡献者     | 243      |
 | 组件数     | 67       |
 
+
+
 ## default readme
 
-基于 Ant Design 和 Vue 3 的企业级 UI 组件库。<https://github.com/vueComponent/ant-design-vue/blob/HEAD/README-zh_CN.md>)
+基于 Ant Design 和 Vue 3 的企业级 UI 组件库。
+
+<https://github.com/vueComponent/ant-design-vue/blob/HEAD/README-zh_CN.md>)
 
 * 特性
 
@@ -71,11 +71,4 @@ Ant Design Vue 于 2017年9月创建代码仓库，2018年8月发布第一个版
 | vue-dash-event            | 在 DOM 模板中，您可以使用 ant-design-vue 组件的自定义事件（camelCase） |
 | @formily/antdv            | 这是一个结合了 Formily 和 ant-design-vue 的组件库              |
 | @ant-design-vue/nuxt      | ant-design-vue 的 nuxt 模块扩展                         |
-
-​
-
-​
-
-&#x20;          &#x20;
-
 

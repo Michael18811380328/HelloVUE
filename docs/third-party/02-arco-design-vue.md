@@ -1,6 +1,8 @@
 # arco-design-vue
 
-Arco Design 是由字节跳动 GIP UED 团队和架构前端团队联合推出的企业级设计系统，Arco Design Vue 是基于 Arco Design 的 Vue3 组件库，于2021年10月开源，提供 71 个组件。
+Arco Design 是由字节跳动 GIP UED 团队和架构前端团队联合推出的企业级设计系统
+
+Arco Design Vue 是基于 Arco Design 的 Vue3 组件库，于2021年10月开源，提供 71 个组件。
 
 [https://arco.design/vue/docs/start](https://arco.design/vue/docs/start "https://arco.design/vue/docs/start")
 
@@ -19,6 +21,5 @@ Arco Design Vue 于 2021年1月创建代码仓库，并发布第一个版本 v2.
 | 贡献者     | 102      |
 | 组件数     | 71       |
 
-​
 
 

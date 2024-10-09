@@ -6,23 +6,23 @@
 
 [https://www.vuepress.cn/guide/directory-structure.html](https://www.vuepress.cn/guide/directory-structure.html "https://www.vuepress.cn/guide/directory-structure.html")
 
-#### vuepress&#x20;
+#### vuepress
 
 #### version
 
-1.9.10 •&#x20;
+1.9.10 •
 
 #### downloads
 
-49,224&#x20;
+49,224
 
 #### repository
 
-github.com/vuejs/vuepress&#x20;
+github.com/vuejs/vuepress
 
 #### homepage
 
-github.com/vuejs/vuepress#readme&#x20;
+github.com/vuejs/vuepress#readme
 
 #### default readme
 
@@ -48,7 +48,7 @@ The docs are available at <https://vuepress.vuejs.org>
 #### Contributing
 
 Want to contribute? Check our issues for
-beginners!   &#x20;
+beginners!   
 
 ```
 yarn # Install and link dependencies for this monorepo

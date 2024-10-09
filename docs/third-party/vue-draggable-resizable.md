@@ -4,19 +4,19 @@
 
 ### version
 
-3.0.0 •&#x20;
+3.0.0 •
 
 ### downloads
 
-26,148&#x20;
+26,148
 
 ### repository
 
-github.com/mauricius/vue-draggable-resizable&#x20;
+github.com/mauricius/vue-draggable-resizable
 
 ### homepage
 
-github.com/mauricius/vue-draggable-resizable&#x20;
+github.com/mauricius/vue-draggable-resizable
 
 # VueDraggableResizable 3
 
@@ -74,14 +74,14 @@ npm install --save vue-draggable-resizable
 基本使用
 
 ```javascript
-​    // main.js
-​    import { createApp } from 'vue'
-​    import VueDraggableResizable from 'vue-draggable-resizable'
-​    import App from './App.vue'
-​    
-​    createApp(App)
-​      .component("vue-draggable-resizable", VueDraggableResizable)
-​      .mount('#app')
+    // main.js
+    import { createApp } from 'vue'
+    import VueDraggableResizable from 'vue-draggable-resizable'
+    import App from './App.vue'
+    
+    createApp(App)
+      .component("vue-draggable-resizable", VueDraggableResizable)
+      .mount('#app')
 ```
 
 ```javascript
@@ -104,9 +104,4 @@ npm install --save vue-draggable-resizable
 You may now use the component in your markup. The component itself does not include any CSS. You'll need to include it
 
 separately in your \`App.vue\`:
-
-​
-
-​
-
 

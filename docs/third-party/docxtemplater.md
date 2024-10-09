@@ -1,26 +1,24 @@
 # docxtemplater
 
-# docxtemplater&#x20;
-
 ### version
 
-3.49.1 •&#x20;
+3.49.1 •
 
 ### downloads
 
-95,272&#x20;
+95,272
 
 ### repository
 
-github.com/open-xml-templating/docxtemplater&#x20;
+github.com/open-xml-templating/docxtemplater
 
 ### homepage
 
-github.com/open-xml-templating/docxtemplater#readme&#x20;
+github.com/open-xml-templating/docxtemplater#readme
 
 ## default readme
 
-​
+
 
 # docxtemplater
 
@@ -48,7 +46,7 @@ Demo Site
 
 * Replace a {placeholder} by a value
 
-* Use loops: {#users} {name} {/users}&#x20;
+* Use loops: {#users} {name} {/users}
 
 * Use loops in tables to generate columns
 
@@ -114,6 +112,5 @@ Docxtemplater is my main job, and has been maintained for over 8 years. Expect
 to get great support if you buy any modules, and also good support on the
 open-source version.
 
-&#x20;          &#x20;
-
+          
 

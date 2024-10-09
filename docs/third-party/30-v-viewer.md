@@ -2,23 +2,23 @@
 
 ‌用于图片查看器，‌提供图片的缩放、‌旋转等操作，‌适用于需要展示大量图片或进行图片编辑的应用
 
-# v-viewer&#x20;
+# v-viewer
 
 ### version
 
-3.0.13 •&#x20;
+3.0.13 •
 
 ### downloads
 
-24,731&#x20;
+24,731
 
 ### repository
 
-github.com/mirari/v-viewer&#x20;
+github.com/mirari/v-viewer
 
 ### homepage
 
-github.com/mirari/v-viewer#readme&#x20;
+github.com/mirari/v-viewer#readme
 
 ## default readme
 
@@ -67,7 +67,7 @@ The component, directive and api will be installed together in the global.
 Two different API styles are both supported: Options API and Composition
 API.
 
-&#x20;  &#x20;
+
 
 ```
 import { createApp } from 'vue'
@@ -79,7 +79,7 @@ app.use(VueViewer)
 app.mount('#app')
 ```
 
-&#x20;  &#x20;
+
 
 ```
 <template>
@@ -138,7 +138,7 @@ app.mount('#app')
 
 #### Browser
 
-&#x20;  &#x20;
+
 
 ```
 <link href="//unpkg.com/viewerjs/dist/viewer.css" rel="stylesheet">
@@ -152,7 +152,7 @@ app.mount('#app')
 
 #### CommonJS
 
-&#x20;  &#x20;
+
 
 ```
 var VueViewer = require('VueViewer')
@@ -160,7 +160,7 @@ var VueViewer = require('VueViewer')
 
 #### AMD
 
-&#x20;  &#x20;
+
 
 ```
 require(['VueViewer'], function (VueViewer) {});
@@ -176,7 +176,7 @@ You can set the options like this: v-viewer="{inline: true}"
 Get the element by selector and then use el.\$viewer to get the viewer
 instance if you need.
 
-&#x20;  &#x20;
+
 
 ```
 <template>
@@ -243,7 +243,7 @@ The viewer instance will be created only once after the directive binded.
 If you're sure the images inside this element won't change again, use it to
 avoid unnecessary re-render.
 
-&#x20;  &#x20;
+
 
 ```
 <div class="images" v-viewer.static="{inline: true}">
@@ -258,7 +258,7 @@ images changed (added, removed or sorted) by default.
 
 If you encounter any display problems, try rebuilding instead of updating.
 
-&#x20;  &#x20;
+
 
 ```
 <div class="images" v-viewer.rebuild="{inline: true}">
@@ -270,7 +270,7 @@ If you encounter any display problems, try rebuilding instead of updating.
 
 You can simply import the component and register it locally too.
 
-&#x20;  &#x20;
+
 
 ```
 <template>
@@ -365,7 +365,7 @@ changed (added, removed or sorted) by default.
 
 If you encounter any display problems, try rebuilding instead of updating.
 
-&#x20;  &#x20;
+
 
 ```
 <viewer
@@ -401,7 +401,7 @@ show gallery without rendering the img elements yourself.
 
 The function returns the current viewer instance.
 
-&#x20;  &#x20;
+
 
 ```
 <template>
@@ -495,6 +495,6 @@ const previewImgObject = () => {
 
 ​
 
-&#x20;          &#x20;
+          
 
 

@@ -2,23 +2,23 @@
 
 ‌一个基于Vue的表单验证库，‌帮助开发者实现表单数据的验证功能。‌
 
-# vee-validate&#x20;
+# vee-validate
 
 ### version
 
-4.13.2 •&#x20;
+4.13.2 •
 
 ### downloads
 
-528,506&#x20;
+528,506
 
 ### repository
 
-github.com/logaretm/vee-validate&#x20;
+github.com/logaretm/vee-validate
 
 ### homepage
 
-vee-validate.logaretm.com/&#x20;
+vee-validate.logaretm.com/
 
 ## default readme
 
@@ -118,7 +118,7 @@ documentation.
 
 Higher-order components can also be used to build forms. Register the Field
 and Form components and create a simple required validator:
-&#x20;  &#x20;
+
 
 ```
 <script setup>

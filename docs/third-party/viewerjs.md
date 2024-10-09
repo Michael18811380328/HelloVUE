@@ -2,23 +2,23 @@
 
 ‌用于图片查看器，‌提供图片的缩放、‌旋转等操作，‌适用于需要展示大量图片或进行图片编辑的应用
 
-# viewerjs&#x20;
+# viewerjs
 
 ### version
 
-1.11.6 •&#x20;
+1.11.6 •
 
 ### downloads
 
-49,583&#x20;
+49,583
 
 ### repository
 
-github.com/fengyuanchen/viewerjs&#x20;
+github.com/fengyuanchen/viewerjs
 
 ### homepage
 
-fengyuanchen.github.io/viewerjs&#x20;
+fengyuanchen.github.io/viewerjs
 
 ## default readme
 
@@ -84,7 +84,7 @@ fengyuanchen.github.io/viewerjs&#x20;
 
 ## Main files
 
-&#x20;  &#x20;
+
 
 ```
 dist/
@@ -100,7 +100,7 @@ dist/
 
 ### Installation
 
-&#x20;  &#x20;
+
 
 ```
 npm install viewerjs
@@ -108,7 +108,7 @@ npm install viewerjs
 
 In browser:
 
-&#x20;  &#x20;
+
 
 ```
 <link  href="/path/to/viewer.css" rel="stylesheet">
@@ -141,7 +141,7 @@ new Viewer(element[, options])
 
 #### Example
 
-&#x20;  &#x20;
+
 
 ```html
 <!-- a block container is required -->
@@ -158,7 +158,7 @@ new Viewer(element[, options])
 </div>
 ```
 
-&#x20;  &#x20;
+
 
 ```javascript
 // You should import the CSS file.

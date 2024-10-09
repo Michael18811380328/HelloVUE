@@ -1,6 +1,6 @@
 # vuex
 
-#### vuex&#x20;
+#### vuex
 
 [https://github.com/vuejs/vuex](https://github.com/vuejs/vuex "https://github.com/vuejs/vuex")
 
@@ -10,19 +10,19 @@ VUE 集中式状态管理，Centralized State Management for Vue.js
 
 #### version
 
-4.1.0 •&#x20;
+4.1.0 •
 
 #### downloads
 
-1,618,636&#x20;
+1,618,636
 
 #### repository
 
-github.com/vuejs/vuex&#x20;
+github.com/vuejs/vuex
 
 #### homepage
 
-github.com/vuejs/vuex#readme&#x20;
+github.com/vuejs/vuex#readme
 
 #### default readme
 

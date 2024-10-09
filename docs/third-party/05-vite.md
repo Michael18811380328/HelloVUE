@@ -1,7 +1,5 @@
 # vite
 
-# vite&#x20;
-
 Vite 是 Vue 开发工具，[https://cn.vitejs.dev/](https://cn.vitejs.dev/ "https://cn.vitejs.dev/")
 
 ## 特点
@@ -22,23 +20,21 @@ Vite 是 Vue 开发工具，[https://cn.vitejs.dev/](https://cn.vitejs.dev/ "htt
 
 [https://cn.vitejs.dev/guide/](https://cn.vitejs.dev/guide/ "https://cn.vitejs.dev/guide/")
 
-​
-
 #### version
 
-5.3.4 •&#x20;
+5.3.4 •
 
 #### downloads
 
-13,829,301&#x20;
+13,829,301
 
 #### repository
 
-github.com/vitejs/vite&#x20;
+github.com/vitejs/vite
 
 #### homepage
 
-vitejs.dev&#x20;
+vitejs.dev
 
 #### vite ⚡
 
@@ -69,11 +65,3 @@ API and JavaScript
 API with full typing support.
 
 Read the Docs to Learn More.
-
-​
-
-​
-
-&#x20;          &#x20;
-
-

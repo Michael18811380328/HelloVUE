@@ -1,7 +1,5 @@
 # element-ui
 
-# element-ui
-
 Element，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库
 
 <https://element.eleme.cn/#/zh-CN/component/installation>
@@ -198,23 +196,23 @@ Vue.prototype.$notify = Notification;
 Vue.prototype.$message = Message;
 ```
 
-# element-ui&#x20;
+# element-ui
 
 ### version
 
-2.15.14 •&#x20;
+2.15.14 •
 
 ### downloads
 
-192,906&#x20;
+192,906
 
 ### repository
 
-github.com/ElemeFE/element&#x20;
+github.com/ElemeFE/element
 
 ### homepage
 
-element.eleme.io&#x20;
+element.eleme.io
 
 ## default readme
 
@@ -229,7 +227,7 @@ MorJS
 
 ## Links
 
-* Homepage and documentation&#x20;
+* Homepage and documentation
 
   * International users
 
@@ -257,7 +255,7 @@ MorJS
 
 * Visual Studio Code helper
 
-* Starter kit&#x20;
+* Starter kit
 
   * element-starter
 
@@ -265,7 +263,7 @@ MorJS
 
 * Design resources
 
-* Gitter&#x20;
+* Gitter
 
   * International users
 
@@ -273,23 +271,17 @@ MorJS
 
 ## Install
 
-​ npm install element-ui -S
+ npm install element-ui -S
 
-## Quick Start​   &#x20;
+## Quick Start​   
 
 ```javascript
-​    import Vue from 'vue'
-​    import Element from 'element-ui'
-​    
-​    Vue.use(Element)
+import Vue from 'vue'
+import Element from 'element-ui'
+Vue.use(Element)
 
 // or
-import {
-  Select,
-  Button
-  // ...
-} from 'element-ui'
-
+import { Select, Button } from 'element-ui'
 Vue.component(Select.name, Select)
 Vue.component(Button.name, Button)
 ```
@@ -298,6 +290,5 @@ For more information, please refer to QuickStart in our documentation.
 
 [https://element.eleme.io/#/en-US/component/quickstart](https://element.eleme.io/#/en-US/component/quickstart "https://element.eleme.io/#/en-US/component/quickstart")
 
-​
 
 
