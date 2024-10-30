@@ -52,21 +52,6 @@ module.exports = {
           { text: "wangeditor", link: "/third-party/wangeditor.md" },          
         ],
       },
-      {
-        text: "vue-spring 项目",
-        items: [
-          { text: "00-前言", link: "/vue-spring-demo-blog/00-前言.md" },
-          { text: "01-项目介绍", link: "/vue-spring-demo-blog/01-项目介绍.md" },
-          { text: "02-VUE-cli", link: "/vue-spring-demo-blog/02-VUE-cli.md" },
-          { text: "03-登录", link: "/vue-spring-demo-blog/03-登录.md" },
-          { text: "04-数据库", link: "/vue-spring-demo-blog/04-数据库.md" },
-          { text: "05-element", link: "/vue-spring-demo-blog/05-element.md" },
-          { text: "06-路由", link: "/vue-spring-demo-blog/06-路由.md" },
-          { text: "07-导航", link: "/vue-spring-demo-blog/07-导航.md" },
-          { text: "08-数据库设计", link: "/vue-spring-demo-blog/08-数据库设计.md" },
-          { text: "09-前端检索", link: "/vue-spring-demo-blog/09-前端检索.md" },
-        ],
-      },
       { text: "更多", link: "https://michael18811380328.github.io/" },
     ],
     // 左侧旁栏 sidebar 只显示文档内部的大纲，不需要额外配置
