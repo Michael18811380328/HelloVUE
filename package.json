@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "lint": "prettier --check --write .",
-    "dev": "vuepress dev docs --cache .cache",
+    "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "move": "npm run build && rm -rf ../Michael18811380328.github.io/vue && cp -r ./docs/.vuepress/dist ../Michael18811380328.github.io/vue"
+    "move": "npm run build && rm -rf ../Michael18811380328.github.io/site/vue && cp -r ./docs/.vuepress/dist ../Michael18811380328.github.io/site/vue"
   },
   "repository": {
     "type": "git",
@@ -30,5 +30,8 @@
     "@vuepress/shared-utils": "^1.9.10",
     "prettier": "^2.8.8",
     "vuepress": "^1.9.10"
+  },
+  "dependencies": {
+    "vue-template-compiler": "^2.7.16"
   }
 }
