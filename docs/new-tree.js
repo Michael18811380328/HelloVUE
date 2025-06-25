@@ -29,4 +29,4 @@
 { text: "vuetify", link: "/third-party/vuetify.md" },
 { text: "vuex", link: "/third-party/vuex.md" },
 { text: "vxe-table", link: "/third-party/vxe-table.md" },
-{ text: "wangeditor", link: "/third-party/wangeditor.md" },
+{ text: "wangeditor", link: "/third-party/wangeditor.md" }

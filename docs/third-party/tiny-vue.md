@@ -1,4 +1,6 @@
-# TinyVue
+# tiny-vue
+
+## TinyVue
 
 [https://opentiny.design/tiny-vue/zh-CN/smb-theme/overview](https://opentiny.design/tiny-vue/zh-CN/smb-theme/overview "https://opentiny.design/tiny-vue/zh-CN/smb-theme/overview")
 
@@ -23,5 +25,6 @@ TinyVue 最大的特点就是基于 Renderless 无渲染组件设计架构实现
 | 贡献者     | 60     |
 | 组件数     | 84     |
 
+​
 
 

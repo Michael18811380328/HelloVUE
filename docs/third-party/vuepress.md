@@ -34,8 +34,7 @@ github.com/vuejs/vuepress#readme
 
 #### Installation
 
-Use the package manager yarn to install VuePress as a
-dev dependency.
+Use the package manager yarn to install VuePress as a dev dependency.
 
 ```
 yarn add vuepress -D
@@ -45,26 +44,10 @@ yarn add vuepress -D
 
 The docs are available at <https://vuepress.vuejs.org>
 
-#### Contributing
+If you don't have a local checkout, you can also open VuePress in Gitpod, a free online IDE for GitHub.
 
-Want to contribute? Check our issues for
-beginners!   
+If you intend to make "substantial" changes to VuePress or its documentation, please checkout VuePress RFCs.
 
-```
-yarn # Install and link dependencies for this monorepo
-yarn dev  # serves VuePress' own docs with itself
-yarn test # make sure your code change pass the test
-```
-
-If you don't have a local checkout, you can also open VuePress in
-Gitpod,
-a free online IDE for GitHub.
-
-If you intend to make "substantial" changes to VuePress or its
-documentation, please checkout VuePress
-RFCs.
-
-If you have a VuePress-related project/component/tool, add it with a pull
-request to this curated list!
+If you have a VuePress-related project/component/tool, add it with a pull request to this curated list!
 
 

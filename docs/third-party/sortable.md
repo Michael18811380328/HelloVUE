@@ -26,19 +26,27 @@ github.com/dominictarr/sortable
 
 Create a list that is can be sorted by dragging ui elements.
 
-```js
+  
+
+```
 var Sortable = require('./')
 
 var array = ['Apple', 'Banana', 'Cherry', 'Durian', 'ElderBerry']
 
 var emitter = Sortable(array, function template (s) {
+
   //return html Element.
+
   var e = document.createElement('h1')
+
   e.innerText = s
+
   return e
+
 }, document.createElement('ol'))
 
 //listen to changes (newArray, splices)
+
 emitter.on('change', console.log.bind(console))
 ```
 
@@ -50,7 +58,7 @@ array.
 template is just a function that takes any thing and returns an
 HTMLElement
 
-
+​
 
 ## known issues:
 
@@ -63,11 +71,12 @@ Dragging goes funny when zoomed on Chrome Android. Be sure to use viewport:
 
 To disable zoom.
 
+​
 
-
-
+​
 
           
 
+​
 
 

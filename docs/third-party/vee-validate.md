@@ -118,7 +118,7 @@ documentation.
 
 Higher-order components can also be used to build forms. Register the Field
 and Form components and create a simple required validator:
-
+  
 
 ```
 <script setup>

@@ -198,12 +198,12 @@ npm install vxe-table
 
 启动本地调试
 
-
+  
 ​    npm run serve
 
 编译打包，生成编译后的目录：es,lib
 
-
+  
 ​    npm run lib
 
 ​
