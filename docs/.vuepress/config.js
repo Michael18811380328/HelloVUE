@@ -1,7 +1,7 @@
 // https://www.vuepress.cn/config/
 
 module.exports = {
-  base: "/site/vue/",
+  base: "/HelloVUE/",
   title: "Vue 笔记",
   description: "Just playing around",
   // https://www.vuepress.cn/guide/markdown.html#%E8%A1%8C%E5%8F%B7
@@ -17,7 +17,7 @@ module.exports = {
     nav: [
       { text: "概述", link: "/" },
       {
-        text: "第三方库",
+        text: "常用第三方库",
         items: [
           { text: "@excalidraw_excalidraw", link: "/third-party/@excalidraw_excalidraw.md" },
           { text: "00-awesome-vue", link: "/third-party/00-awesome-vue.md" },
@@ -42,6 +42,11 @@ module.exports = {
           { text: "pure-admin_vue-pure-admin", link: "/third-party/pure-admin_vue-pure-admin.md" },
           { text: "quasar", link: "/third-party/quasar.md" },
           { text: "sortable", link: "/third-party/sortable.md" },
+        ],
+      },
+      {
+        text: "其他第三方库",
+        items: [
           { text: "streamsaver", link: "/third-party/streamsaver.md" },
           { text: "thingsboard-ui-vue3", link: "/third-party/thingsboard-ui-vue3.md" },
           { text: "tiny-vue", link: "/third-party/tiny-vue.md" },
